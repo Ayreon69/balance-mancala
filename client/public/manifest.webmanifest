@@ -1,0 +1,11 @@
+{
+  "name": "Balance Mancala",
+  "short_name": "Mancala",
+  "description": "Sème, fais marquer qui tu veux : à la fin, seule ta couleur la plus faible compte.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#efe3c6",
+  "theme_color": "#efe3c6",
+  "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}
