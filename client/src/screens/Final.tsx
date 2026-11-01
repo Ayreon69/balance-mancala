@@ -97,7 +97,9 @@ export function Final({ view }: { view: RoomView }) {
                   <Coin seat={p.seat} size="md" />
                   <span className="final-who">
                     <b>
-                      <Avatar avatar={p.avatar} /> {p.id === view.me ? 'Toi' : p.name}
+                      <span className="final-name">
+                        <Avatar avatar={p.avatar} /> {p.id === view.me ? 'Toi' : p.name}
+                      </span>
                       {p.wins > 0 && (
                         <span className="final-wins" title="Parties gagnées à cette table, ce soir">
                           <Trophy size={12} aria-hidden /> {p.wins}

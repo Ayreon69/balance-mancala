@@ -2242,10 +2242,16 @@ strong {
 
 .final-who b {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 4px;
-  overflow-wrap: anywhere;
+  gap: 0 4px;
   line-height: 1.2;
+}
+
+/* Le nom ne se coupe qu'entre deux mots, ou s'il ne tient pas seul sur sa ligne ; le trophée passe dessous s'il manque de place. */
+.final-name {
+  min-width: 0;
+  overflow-wrap: break-word;
 }
 
 .final-who small {
